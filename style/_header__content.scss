@@ -1,0 +1,95 @@
+.header {
+    background: linear-gradient(to right, $white 50%, $green 50%);
+    padding-bottom: 53px;
+
+    @media (max-width: $breakpoint-xl) {
+        background: $white;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        background: linear-gradient(to top, $white 50%, $green 50%);
+    }
+}
+
+.header__content {
+    padding: 32px 0 0 80px;
+    display: flex;
+
+    @media (max-width: $breakpoint-xl) {
+        flex-direction: column;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        padding: 0;
+    }
+}
+
+.header__group {
+    z-index: 1;
+    margin-top: 40px;
+
+    h1 {
+        @media (max-width: $breakpoint-md) {
+            margin: 0;
+            font-size: 56px;
+            color: $white;
+            text-align: center;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            font-size: 46px;
+        }
+    }
+
+    h2 {
+        margin-bottom: 47px;
+    }
+
+    p {
+        font-family: "Oswald", serif;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 52px;
+
+        @media (max-width: $breakpoint-md) {
+            color: $white;
+            text-align: center;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            font-size: 18px;
+        }
+    }
+}
+
+.header__content-img {
+    margin-left: -45px;
+
+    @media (max-width: $breakpoint-xl) {
+        width: 700px;
+        margin-top: -80px;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        z-index: 1;
+        width: 600px;
+        margin-top: -620px;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        width: 100%;
+    }
+}
+
+.button_primary {
+    @media (max-width: $breakpoint-md) {
+        width: 100%;
+        margin-top: 550px;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        margin-top: 600px;
+        font-size: 18px;
+    }
+}

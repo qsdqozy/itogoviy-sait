@@ -1,0 +1,39 @@
+.desktop-navigation {
+    padding-top: 53px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint-md) {
+        display: none;
+    }
+}
+
+.desktop-navigation__list {
+    gap: 50px;
+    display: flex;
+
+    a {
+        font-weight: 330;
+        color: white;
+
+        @media (max-width: $breakpoint-xl) {
+            color: $black;
+        }
+    }
+}
+
+.desktop-navigation__list-element_active {
+    font-weight: 400;
+    border-bottom: 2px solid white;
+    padding-bottom: 8px;
+
+    @media (max-width: $breakpoint-xl) {
+        border-bottom: 2px solid $light-green;
+    }
+}
+
+.desktop-navigation__list {
+    gap: 34px;
+    display: flex;
+}

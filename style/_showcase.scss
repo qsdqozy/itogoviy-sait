@@ -1,0 +1,132 @@
+.showcase {
+    padding: 20px 0px;
+}
+
+.showcase__content {
+    display: flex;
+    gap: 137px;
+
+    img {
+        margin-top: 100px;
+
+        @media (max-width: $breakpoint-xl) {
+            margin-left: 16%;
+        }
+
+        @media (max-width: $breakpoint-md) {
+            width: 100%;
+            margin-top: 50px;
+            margin-left: 0;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            margin-top: 50px;
+            width: 100%;
+        }
+    }
+
+    @media (max-width: $breakpoint-xl) {
+        display: block;
+    }
+}
+
+
+.showcase__content-info {
+    @media (max-width: $breakpoint-xl) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        display: block;
+    }
+}
+
+.showcase__content-group>p {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #444444;
+    width: 436px;
+    margin-top: -37px;
+
+    @media (max-width: $breakpoint-xl) {
+        width: 100%;
+    }
+}
+
+.showcase__content-price {
+    display: flex;
+    margin-top: 59px;
+    gap: 67px;
+
+    @media (max-width: $breakpoint-xl) {
+        margin: 9px;
+        display: block;
+        text-align: end;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        display: flex;
+        justify-content: center;
+        margin-top: 39px;
+        gap: 10px;
+    }
+
+    h2 {
+        @media (max-width: $breakpoint-sm) {
+            font-size: 18px;
+        }
+    }
+}
+
+.showcase__content-items {
+    display: flex;
+    gap: 42px;
+    margin-top: 69px;
+
+    @media (max-width: $breakpoint-xl) {
+        margin: 0;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        justify-content: center;
+        gap: 92px;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        gap: 62px;
+    }
+}
+
+.showcase__content-item {
+    border: 1px solid $pale-gray;
+    padding: 15px;
+    width: 163px;
+    height: 73px;
+    position: relative;
+
+    h6 {
+        text-align: center;
+
+        @media (max-width: $breakpoint-md) {
+            font-size: 24px;
+        }
+    }
+
+    p {
+        margin: 0;
+        position: absolute;
+        font-size: 14px;
+        font-family: Arial;
+        font-weight: 400;
+        background-color: $white;
+        padding: 0 7px;
+        bottom: -11px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: max-content;
+    }
+}
